@@ -13,7 +13,15 @@ export default {
 }
 </script>
 <style>
+@font-face {
+  font-family: 'Ostrich';
+  src: url('./ostrich-sans-rounded.woff') format('woff');
+}
 .container {
   color: green;
+  font-family: 'Ostrich', monospace;
+}
+h2 {
+    font-size: 5rem;
 }
 </style>
