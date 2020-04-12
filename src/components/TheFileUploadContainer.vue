@@ -7,7 +7,7 @@
       :isRemovable="index === count.length - 1 && count.length > 1"
       @removeFile="removeFile"
     />
-    <button @click="addFile">Add</button>
+    <button class="bttn-unite bttn-md" @click="addFile">Add</button>
   </div>
 </template>
 
@@ -39,6 +39,6 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 </style>
