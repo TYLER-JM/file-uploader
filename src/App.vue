@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2 class="container__title">Vue Component</h2>
+    <h2 class="container__title">Upload Your File(s)</h2>
     <TheFileUploadContainer/>
   </div>
 </template>
