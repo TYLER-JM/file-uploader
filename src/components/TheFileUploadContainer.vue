@@ -7,7 +7,7 @@
       :isRemovable="index === count.length - 1 && count.length > 1"
       @removeFile="removeFile"
     />
-    <button class="bttn-unite bttn-md" @click="addFile">Add</button>
+    <button class="bttn-unite bttn-sm" @click="addFile">Add</button>
   </div>
 </template>
 
@@ -28,7 +28,6 @@ export default {
       this.count.push({key: bbkey(4)});
     },
     removeFile(val) {
-      console.log('tried to remove: ', val);
       this.count = this.count.filter(item => item.key !== val);
     }
   }
