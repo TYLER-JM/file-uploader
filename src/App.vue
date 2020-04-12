@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2>Vue Component</h2>
+    <h2 class="container__title">Vue Component</h2>
     <TheFileUploadContainer/>
   </div>
 </template>
@@ -19,7 +19,12 @@ export default {
 }
 .container {
   color: green;
-  font-family: 'Ostrich', monospace;
+  display: flex;
+  flex-direction: column;
+}
+.container__title {
+  font-family: 'Ostrich', Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 h2 {
     font-size: 5rem;
