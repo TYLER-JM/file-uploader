@@ -1,5 +1,5 @@
 <template>
-  <div class="upload-container__item panel-body">
+  <div class="upload-container__item border-primary p-2">
     <div  class="upload-container__button">
       <button class="bttn-unite bttn-xs bttn-danger" v-if="isRemovable" @click="$emit('removeFile', uniqueId)">X</button>
     </div>
@@ -41,11 +41,11 @@ export default {
 </script>
 <style scoped>
 .upload-container__item {
-  border: 1px solid black;
   margin: 1px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #e2ebff;
 }
 .upload-container__button {
   align-self: flex-end;
