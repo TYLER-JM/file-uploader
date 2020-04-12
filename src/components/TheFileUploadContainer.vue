@@ -1,12 +1,14 @@
 <template>
-  <div class="upload-container">
-    <FileUploadItem 
-      v-for="(item, index) in count"
-      :key="item.key"
-      :uniqueId="item.key"
-      :isRemovable="index === count.length - 1 && count.length > 1"
-      @removeFile="removeFile"
-    />
+  <div>
+    <div class="upload-container">
+      <FileUploadItem 
+        v-for="(item, index) in count"
+        :key="item.key"
+        :uniqueId="item.key"
+        :isRemovable="index === count.length - 1 && count.length > 1"
+        @removeFile="removeFile"
+      />
+    </div>
     <button class="bttn-unite bttn-sm" @click="addFile">Add</button>
   </div>
 </template>
@@ -36,8 +38,9 @@ export default {
 <style scoped>
 .upload-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 </style>

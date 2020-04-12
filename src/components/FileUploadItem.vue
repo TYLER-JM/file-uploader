@@ -9,9 +9,15 @@
     </div> -->
     <FileUploadItemLabel/>
     <div class="input-group mb-3">
-      <div class="custom-file mr-4">
-        <input type="file" class="custom-file-input" @change="updateMessage($event)" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-        <label class="custom-file-label" for="inputGroupFile01">{{ message }}</label>
+      <div class="custom-file">
+        <input
+          type="file"
+          class="custom-file-input"
+          @change="updateMessage($event)"
+          id="inputGroupFile01"
+          aria-describedby="inputGroupFileAddon01"
+        >
+        <label class="custom-file-label upload-container__label" for="inputGroupFile01">{{ message }}</label>
       </div>
     </div>
   </div>
@@ -45,11 +51,15 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #e2ebff;
+  background-color: #e1e3e6;
+  max-width: calc(30em + 0.75rem + 2px);
 }
 .upload-container__button {
   align-self: flex-end;
   height: 0px;
   margin: 5px;
+}
+.upload-container__label {
+  overflow: hidden;
 }
 </style>

@@ -18,7 +18,6 @@ export default {
   src: url('./ostrich-sans-rounded.woff') format('woff');
 }
 .container {
-  color: #008000;
   display: flex;
   flex-direction: column;
 }
@@ -27,6 +26,7 @@ export default {
   text-align: center;
 }
 h2 {
+    color: #008000;
     font-size: 5rem;
 }
 </style>
