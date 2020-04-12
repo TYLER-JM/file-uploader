@@ -51,8 +51,10 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #e1e3e6;
-  max-width: calc(30em + 0.75rem + 2px);
+  border: 1px solid #d5deec;
+  /* border-radius: 5px; */
+  box-shadow: 3px 0px 10px #e5e4e5;
+  max-width: calc(33em + 0.75rem + 2px);
 }
 .upload-container__button {
   align-self: flex-end;
